@@ -1,0 +1,42 @@
+.dishes-container {
+  margin-top: 50px;
+  margin-inline: 149px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+}
+
+.dish-card {
+  background-color: #393939;
+  color: white;
+  border-radius: 60px;
+  padding: 10px;
+  width: 320px;
+  height: 350px;
+  text-align: center;
+  transition: width ease 0.4s, height ease 0.4s, background-color ease 0.8s;
+}
+
+.dish-card:hover {
+  background-color: #bb1020;
+  width: 330px;
+  height: auto;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 60px;
+}
+
+.dish-card h3 {
+  font-family: 'Lemon', serif;
+  margin-inline: 35px;
+  transition: letter-spacing ease 0.8s, margin-top ease 0.8s, flex-wrap ease 0.5s;
+}
+
+.dish-card:hover h3 {
+  margin-top: 40px;
+  letter-spacing: 2px;
+}

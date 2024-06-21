@@ -93,16 +93,20 @@ header{
 
 .parameter-btn {
   background-color: #393939;
+  width: 150px;
+  height: 40px;
   color: white;
+  font-size: 20px;
   border: none;
   border-radius: 20px;
   padding: 5px 15px;
   font-family: 'Lemon', serif;
   cursor: pointer;
-  transition: letter-spacing 0.5s ease, width 0.8s ease;
+  transition: letter-spacing 0.5s ease, width 0.8s ease, background-color ease 0.8s;
 }
 
 .parameter-btn:hover {
+  background-color: #bb1020;
   letter-spacing: 0.2rem;
-  width: auto;
+  width: 170px;
 }

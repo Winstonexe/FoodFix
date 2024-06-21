@@ -1,16 +1,21 @@
+"use client";
+
 import React from "react";
 
-const SearchParameters: React.FC = () =>{
-    return(
-        <div className="search-parameters">
-            <button className="parameter-btn">Pasta</button>
-            <button className="parameter-btn">Chicken</button>
-            <button className="parameter-btn">Pork</button>
-            <button className="parameter-btn">Meat</button>
-            <button className="parameter-btn">Beef</button>
-            <button className="parameter-btn">Potato</button>
-        </div>
-    )
+interface SearchParametersProps {
+  fetchData: (query: string) => void;
 }
+
+const SearchParameters: React.FC<SearchParametersProps> = ({ fetchData }) => {
+  return (
+    <div className="search-parameters">
+      {["Pasta", "Chicken", "Pork", "Meat", "Beef", "Potato"].map((param) => (
+        <button key={param} className="parameter-btn" onClick={() => fetchData(param)}>
+          {param}
+        </button>
+      ))}
+    </div>
+  );
+};
 
 export default SearchParameters;
