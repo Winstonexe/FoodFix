@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+header{
+    margin: 0;
+    background-color: #393939;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lemon", serif;
+}
+
+.logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-handler{
+    margin: 5px;
+}
+
+.brand-name{
+    color: #ffff;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.5s ease;
+}
+
+.search-bar {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Lemon', serif;
+  outline: none;
+  padding-left: 10px;
+  transition: width 0.8s ease, letter-spacing 0.5s ease, background-color 0.5s ease;
+}
+
+.search-bar::placeholder {
+  transition: letter-spacing 0.5s ease;
+}
+
+.search-bar-container:hover .search-bar {
+  width: 350px;
+}
+
+.search-bar-container:hover .search-bar::placeholder {
+  letter-spacing: 2px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.fav-btn{
+  font-family: "Lemon", serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bb1020;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  transition: background-color ease 0.5s;
+}
+
+.fav-btn:hover{
+  background-color: #870c19;
+}
+
+.search-parameters {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.parameter-btn {
+  background-color: #393939;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-family: 'Lemon', serif;
+  cursor: pointer;
+  transition: letter-spacing 0.5s ease, width 0.8s ease;
+}
+
+.parameter-btn:hover {
+  letter-spacing: 0.2rem;
+  width: auto;
+}
