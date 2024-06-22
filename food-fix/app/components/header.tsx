@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from 'next/link';
 
 import "../../styles/header.css";
 import logo from "../../public/Logo.svg";
@@ -20,10 +21,13 @@ const Header: React.FC<HeaderProps> = ({ fetchData }) => {
 
   return (
     <header>
-      <div className="logo-container">
-        <Image className="logo-handler" src={logo} alt="Food Fix logo" width={50} height={50} />
-        <h2 className="brand-name">FoodFix</h2>
-      </div>
+      <Link href="/">
+        <div className="logo-container">
+          <Image className="logo-handler" src={logo} alt="Food Fix logo" width={50} height={50} />
+          <h2 className="brand-name">FoodFix</h2>
+        </div>
+      </Link>
+
       <div className="search-bar-container">
         <input
           className="search-bar"

@@ -8,6 +8,7 @@ import SearchParameters from "./components/SearchParameters";
 import DishCard from "./components/dishCard";
 
 interface RecipeItem {
+  id: string;
   image: string;
   name: string;
   description: string;
@@ -34,6 +35,7 @@ export default function Home() {
     try {
       const response = await axios.request(options);
       const simplifiedData = response.data.map((item: RecipeItem) => ({
+        id: item.id,
         image: item.image,
         name: item.name,
         description: item.description,
